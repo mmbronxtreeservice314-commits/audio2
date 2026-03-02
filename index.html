@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visual Consultant NYC | NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation</title>
+    <meta name="description" content="Expert audio visual consultant in NYC. Specializing in conference room AV installation, audio video installation, CCTV & surveillance camera systems in New York City.">
+    <meta name="keywords" content="Conference Room Av Installation, Conference Room Av Installation Near Me, Audio Visual Consultant Nyc, Audio Video Installation Nyc, CCTV Installation NYC, Surveillance Camera Installation New York">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #00d4ff;
+            --primary-dark: #0099cc;
+            --secondary-color: #0f2027;
+            --secondary-light: #2c5364;
+            --text-dark: #0f2027;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+            --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            --shadow-sm: 0 3px 15px rgba(0,0,0,0.08);
+            --shadow-md: 0 5px 25px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 70px;
+            width: auto;
+        }
+
+        .header-contact a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .header-contact a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(15,32,39,0.95) 0%, rgba(44,83,100,0.9) 100%);
+            color: white;
+            padding: 200px 0 140px;
+            text-align: center;
+            margin-top: 95px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .hero .highlight {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            margin-bottom: 35px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 10px;
+            box-shadow: 0 8px 30px rgba(0,212,255,0.4);
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0,212,255,0.6);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 60px;
+            color: var(--text-dark);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        }
+
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .about-content p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services {
+            padding: 100px 0;
+            background: var(--bg-gradient);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-left: 5px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0,212,255,0.25);
+            border-left-color: var(--primary-color);
+        }
+
+        .service-card h3 {
+            color: var(--text-dark);
+            font-size: 1.6rem;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 a {
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .service-card h3 a:hover {
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .why-choose {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-light);
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .faq {
+            padding: 100px 0;
+            background: var(--bg-gradient);
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            padding: 0 30px 25px;
+            color: var(--text-light);
+            line-height: 1.9;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .contact {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 35px;
+            font-size: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+        }
+
+        .contact-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 550px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0a1612 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 968px) {
+            .hero h1 { font-size: 2.5rem; }
+            .contact-grid, .header-content { grid-template-columns: 1fr; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://www.nycittech.com/wp-content/uploads/2019/06/logo.png" alt="NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation">
+                </div>
+                <div class="header-contact">
+                    <a href="tel:212-671-3330">📞 212-671-3330</a>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>NYC's Trusted <span class="highlight">Audio Visual Consultant</span> & AV Installation Experts</h1>
+            <p>Professional Conference Room AV Installation, CCTV & Surveillance Camera Solutions in New York City</p>
+            <a href="http://www.nycittech.com/" class="cta-button">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation</h2>
+            <div class="about-content">
+                <p>At <a href="http://www.nycittech.com/" style="color: #00d4ff; text-decoration: none;"><b>NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation</b></a>, our experienced IT technical team offers a comprehensive portfolio of services designed to help businesses and homeowners throughout New York City with the development and implementation of their unique IT and audiovisual needs. As a trusted <a href="https://www.google.com/maps?cid=6771287905661830025" style="color: #00d4ff; text-decoration: none;"><b>audio visual consultant in NYC</b></a>, the key to our success is truly understanding our clients — their business activities, goals, and what they wish to achieve — so we can deliver solutions that genuinely make a difference.</p>
+
+                <p>Our goal is to help you gain optimum value from your IT and AV investments, while maintaining competitive rates on all the services we offer. We take pride in always being there for our loyal customers, no matter the time of day. Whether it's a critical conference room AV installation or an urgent network issue, our mission is to ensure your IT and audiovisual infrastructure is always running at peak performance. We believe strong technology should be invisible — it just works, so you can focus on what matters most.</p>
+
+                <p>Our services span audio video installations, IT & Tech Support, VoIP Phone System Installation, Network Installations, and comprehensive security solutions tailored to your specific needs and budget. Our trained network and AV technicians will find the best possible solution for your environment. We can also give you remote access to your equipment from anywhere in the world — as long as you have an internet connection, you can monitor your home or business exactly how you see fit. We are one of New York's most reputed security system service providers, delivering best-in-class installations for all your security needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><a href="#contact">Conference Room AV Installation</a></h3>
+                    <p>Transform your meeting spaces with our expert <a href="http://www.nycittech.com/" style="color: #00d4ff; text-decoration: none;"><b>conference room AV installation</b></a> services. We design and install fully integrated audio-visual systems tailored for boardrooms, training rooms, and collaborative workspaces. From projection screens and video walls to crystal-clear sound systems and wireless presentation tools, we ensure your team communicates seamlessly — whether in the room or joining remotely.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">Audio Video Installation NYC</a></h3>
+                    <p>As a leading provider of <a href="https://www.google.com/maps?cid=6771287905661830025" style="color: #00d4ff; text-decoration: none;"><b>audio video installation in NYC</b></a>, we deliver premium AV solutions for businesses and residences across New York City. Whether you need a complete multi-room audio system, a home theater, or a professional video display setup, our certified technicians handle everything from design to installation with precision and care.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">CCTV & Surveillance Camera Installation</a></h3>
+                    <p>Protect what matters most with our professional CCTV and surveillance camera installation services. We design and deploy custom security camera systems for homes, offices, retail stores, and commercial facilities throughout New York City. Our solutions provide high-definition coverage, remote monitoring capabilities, and reliable recording — giving you complete peace of mind around the clock.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">IT & Tech Support</a></h3>
+                    <p>Keep your business running smoothly with our responsive IT and tech support services. Our experienced technicians provide on-site and remote support for all your technology needs — from troubleshooting hardware and software issues to proactive maintenance and system upgrades. We're available when you need us most, ensuring minimal downtime and maximum productivity for your team.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">VoIP Phone System Installation</a></h3>
+                    <p>Upgrade your business communications with a modern VoIP phone system installed by our certified professionals. We assess your current infrastructure, recommend the best VoIP solution for your needs, and handle full installation and configuration. Enjoy crystal-clear call quality, advanced features, and significant cost savings over traditional phone systems — all backed by our ongoing technical support.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">Network Installation & Setup</a></h3>
+                    <p>A fast, secure, and reliable network is the backbone of every successful business. Our network technicians design and install structured cabling, wireless networks, firewalls, and network infrastructure tailored to your environment. Whether you're setting up a new office or expanding an existing one, we ensure your network is built for performance, security, and scalability.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">Remote Access & Monitoring Solutions</a></h3>
+                    <p>Stay connected to your business or home from anywhere in the world. We set up secure remote access solutions that let you monitor your security cameras, manage your systems, and stay in control — all from your personal computer or smartphone. As long as you have an internet connection, you'll have full visibility and control over your property at all times.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">Audio Visual Consultant Services</a></h3>
+                    <p>Not sure which AV solution is right for your space? Our experienced <a href="https://www.google.com/maps?cid=6771287905661830025" style="color: #00d4ff; text-decoration: none;"><b>audio visual consultants in NYC</b></a> are here to help. We take time to understand your business goals, space requirements, and budget before recommending a customized AV strategy. From initial planning and system design to vendor selection and project management, we guide you every step of the way.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3><a href="#contact">Custom Security Solutions</a></h3>
+                    <p>Every property has unique security requirements, which is why we offer fully customized security solutions tailored to your specific needs and budget. Our trained security specialists assess your vulnerabilities and design comprehensive systems combining surveillance cameras, access control, alarm systems, and remote monitoring — delivering complete protection for your home or business in New York City.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Experienced IT & AV Professionals</h3>
+                    <p>Our team of seasoned IT technicians and certified audio visual consultants brings deep expertise to every project. We don't just install equipment — we understand technology from the ground up, ensuring every system we deploy is properly designed, configured, and optimized for your specific environment. You can trust our professionals to get it right the first time.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🗽</div>
+                    <h3>NYC-Based Local Specialists</h3>
+                    <p>As a New York City-based company located at 286 Madison Ave, we understand the unique challenges of working in NYC — from building access requirements to tight project timelines. Our local presence means we respond quickly, know the market, and are always nearby when you need us. We serve businesses and residents across all five boroughs and the greater New York area.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Tailored Solutions for Every Budget</h3>
+                    <p>We believe great technology shouldn't be out of reach. Whether you're a small business looking for a cost-effective conference room AV setup or a corporation requiring an enterprise-grade surveillance system, we design solutions scaled to your needs and budget. Our competitive pricing ensures you always get exceptional value without compromising on quality or performance.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Available Around the Clock</h3>
+                    <p>Technology doesn't keep business hours, and neither do we. Our team is committed to being available for our loyal customers no matter the time of day. When your AV system goes down before an important meeting or your network experiences issues, we're ready to respond quickly and get you back up and running with minimal disruption to your operations.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Remote Access & Monitoring Capability</h3>
+                    <p>We empower our clients with the ability to monitor and manage their systems from anywhere in the world. Our remote access solutions give you complete visibility into your security cameras, networks, and AV equipment from any device with an internet connection. Stay in control of your home or business no matter where you are — that's the NYC IT Tech advantage.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Reputed Security System Experts in New York</h3>
+                    <p>NYC IT Tech is one of New York's most trusted security system service providers, with a proven track record of delivering best-in-class CCTV and surveillance camera installations for homes and businesses alike. Our reputation is built on reliability, professionalism, and results. When it comes to protecting your property, clients across New York City choose us time and time again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What does an audio visual consultant do?
+                </div>
+                <div class="faq-answer">
+                    An audio visual consultant helps businesses and individuals plan, design, and implement AV systems that meet their specific communication and operational needs. At NYC IT Tech, our audio visual consultants start by understanding your goals — whether it's improving conference room meetings, setting up a multi-room audio system, or creating an immersive presentation environment. We assess your space, recommend the right equipment, manage procurement, oversee installation, and ensure everything is configured and working perfectly. We serve as your trusted technology partner from concept through completion, saving you time, money, and frustration.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What is included in a conference room AV installation?
+                </div>
+                <div class="faq-answer">
+                    A comprehensive conference room AV installation typically includes displays or projectors for clear presentations, a professional audio system with microphones and speakers for crystal-clear communication, video conferencing equipment for remote participants, and a centralized control system that ties everything together. At NYC IT Tech, we also handle all the cabling, mounting, and configuration — ensuring the system is intuitive for every user in the room. We can integrate with popular platforms like Zoom, Microsoft Teams, and Google Meet so your team can connect seamlessly with no technical headaches.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How long does a CCTV or surveillance camera installation take?
+                </div>
+                <div class="faq-answer">
+                    Installation time depends on the size of your property and the number of cameras being installed. A basic system for a small office or apartment can typically be completed in a single day. Larger commercial properties or multi-camera systems covering an entire building may take 2–4 days. During our initial consultation, we assess your property, discuss your security needs, and provide a detailed timeline. Our team works efficiently to minimize disruption to your daily operations while ensuring every camera is properly positioned, connected, and tested before we leave.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Can I access my security cameras remotely from my phone?
+                </div>
+                <div class="faq-answer">
+                    Absolutely. Remote access is one of the most valuable features of a modern surveillance system, and it's something we set up for every client. As long as you have an internet connection, you can view live and recorded footage from your security cameras on any device — smartphone, tablet, or computer — from anywhere in the world. We configure secure remote viewing access as part of every CCTV installation, and we walk you through how to use it so you're always in control of your property, whether you're at the office, traveling, or at home.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Do you offer ongoing IT and AV support after installation?
+                </div>
+                <div class="faq-answer">
+                    Yes — our relationship with clients doesn't end at installation. NYC IT Tech provides ongoing IT and tech support, system maintenance, troubleshooting, and upgrades for all the systems we install. We take pride in being available for our loyal customers at any time of day, ensuring your AV, network, or security infrastructure is always running at its best. Whether you need a quick remote fix or an on-site technician, we respond promptly and professionally. Our goal is to be your long-term technology partner — not just a one-time contractor.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <strong>Business Name:</strong>
+                        <span>NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:212-671-3330">212-671-3330</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <span>286 Madison Ave #402, New York, NY 10017</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Website:</strong>
+                        <a href="http://www.nycittech.com/" target="_blank">www.nycittech.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Google Maps:</strong>
+                        <a href="https://www.google.com/maps?cid=6771287905661830025" target="_blank">View Our Location</a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?cid=6771287905661830025&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">© 2025 NYC IT Tech Audio Video, CCTV And Surveillance Camera Installation. All Rights Reserved. | 286 Madison Ave #402, New York, NY 10017 | <a href="tel:212-671-3330" style="color: var(--primary-color);">212-671-3330</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Toggle current answer
+                answer.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
